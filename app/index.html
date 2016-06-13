@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SERVIEXPRESS ASISTENCIA</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Ofrecemos a nuestros clientes un servicio profesional con soluciones integrales para su casa, negocio, oficina, empresa o industria, gracias a nuestra innovación y honestidad somos su mejor opción en servicios en mantenimiento, reparaciones e instalaciones tanto eléctricas, hidráulicas y sanitarias, además que conocemos y manejamos las mejores marcas y materiales del mercado.">
+    <meta name="keywords" content="SERVICIOS, PLOMERIA, ELECTRICIDAD, INSTALACIONES ELCTRICAS, INSTALACIONES ">
+    <meta name="author" content="whileapp">    
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-material-datetimepicker.css"></link>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body ng-app="serviExpressApp">
+    <div class="navbar-fixed">
+      <header>
+        <nav>
+          <div class="nav-wrapper grey darken-3">
+            <a href="#!" class="brand-logo">SERVIEXPRESS</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#/">Inicio</a></li>
+              <li><a href="#/about">Nosotros</a></li>
+              <li><a href="#/servicios">Servicios</a></li>
+              <li><a href="#/contacto">Contacto</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="#/"><i class="material-icons left">home</i> Inicio</a></li>
+              <li><a href="#/about"><i class="material-icons left">face</i> Nosotros</a></li>
+              <li><a href="#/servicios"><i class="material-icons left">work</i> Servicios</a></li>
+              <li><a href="#/contacto"><i class="material-icons left">local_post_office</i> Contacto</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>    
+    </div>    
+
+    <div ng-view=""></div>
+
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Solicitud de registro</h4>
+      <div class="row">
+        <form class="col s12">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="nombre" type="text" class="validate">
+            <label for="nombre" data-error="wrong" data-success="right">Nombre cliente</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">home</i>
+            <input id="direccion" type="text" class="validate">
+            <label for="direccion" data-error="wrong" data-success="right">Direccion</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">phone</i>
+            <input id="telefono" type="text" class="validate">
+            <label for="telefono" data-error="wrong" data-success="right">Telefono</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">work</i>
+            <input id="servicio" type="text" class="validate">
+            <label for="servicio" data-error="wrong" data-success="right">Servicio</label>
+          </div>  
+          <div class="input-field col s12">
+            <i class="material-icons prefix">date_range</i>
+            <input type="date" class="datepicker" id="fecha">
+            <label for="fecha" data-error="wrong" data-success="right">Fecha</label>
+          </div>  
+          <div class="input-field col s12">
+           <i class="material-icons prefix">av_timer</i>
+            <input id="hora" type="text" class="validate">
+            <label for="hora" data-error="wrong" data-success="right">Hora</label>
+          </div>  
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input id="email" type="email" class="validate">
+            <label for="email" data-error="wrong" data-success="right">Email</label>
+          </div>                                                       
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#tercera_seccion" class="waves-effect waves-blue btn-flat" id="enviar">Enviar</a>
+      <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Cancelar</a>
+    </div>
+  </div>
+
+  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red">
+      <i class="material-icons">add</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating cyan darken-1 modal-trigger" href="#modal1"><i class="material-icons">assignment</i></a></li>
+      <li><a class="btn-floating blue darken-1" href="mailto:example@.com"><i class="material-icons">email</i></a></li>
+    </ul>
+  </div>    
+
+  <footer class="page-footer grey darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l4 s12">
+          <h5 class="white-text">SERVIEXPRESS ASISTENCIA</h5>
+          <p class="grey-text text-lighten-4">Garantia Calidad y Confianza</p>
+        </div>
+        <div class="col l4 s12">
+          <p class="grey-text text-lighten-4"><i class="material-icons">location_on</i>Melchor Ocampo N. 42 Col. Campamento 2 de Octubre</p>
+          <p class="grey-text text-lighten-4"><i class="material-icons">phone</i>26 21 20 52</p>
+          <p class="grey-text text-lighten-4"><i class="material-icons">phone</i>26 21 17 71</p>
+        </div>
+        <div class="col l4 s12">
+          <p class="white-text">Instalaciones reparaciones y mantenimiento:</p>
+          <p class="grey-text text-lighten-4">Recidencial</p>
+          <p class="grey-text text-lighten-4">Comercial</p>
+          <p class="grey-text text-lighten-4">Industrial</p>
+        </div>        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      2016 whileapp
+      </div>
+    </div>
+  </footer>  
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="scripts/moment.js"></script>
+    <script src="scripts/bootstrap-material-datetimepicker.js"></script>    
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/servicios.js"></script>
+        <script src="scripts/controllers/contacto.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
